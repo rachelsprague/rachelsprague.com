@@ -48,6 +48,9 @@ main {
 
 .social-icons-inline a {
   display: inline-block;
+  background: none !important;   /* remove gray box */
+  padding: 0 !important;         /* remove padding */
+  border-radius: 0 !important;   /* remove rounded corners */
 }
 
 .social-icons-inline img {
