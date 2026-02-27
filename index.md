@@ -11,3 +11,4 @@ I work with data to support decision-making, reporting, and technical analysis a
 - [Work](/work)
 - [About](/about)
 - [Resume](/resume)
+- [Blog](/blog)
