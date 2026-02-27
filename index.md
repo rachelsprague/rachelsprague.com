@@ -19,11 +19,11 @@ title: Rachel Sprague
   </div>
 
   <!-- Links Section -->
-  <h2>Links</h2>
+  <!-- <h2>Links</h2>
   <a href="/about">About Me</a>
   <a href="/work">Work / Projects</a>
   <a href="/resume">Resume</a>
-  <a href="/blog">Blog</a>
+  <a href="/blog">Blog</a> -->
 
   <!-- Utilities Section -->
   <h2>Utilities</h2>
