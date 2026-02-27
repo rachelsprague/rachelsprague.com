@@ -6,7 +6,7 @@ title: Rachel Sprague
 <div class="landing-container">
 
   <!-- Logo / Icon -->
-  <img src="/assets/logo.png" alt="Rachel Sprague" class="logo">
+  <img src="/assets/images/logo.png" alt="Rachel Sprague" class="logo">
 
   <!-- Social media icons inline -->
   <div class="social-icons-inline">
