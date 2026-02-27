@@ -59,3 +59,40 @@ article p em {
     font-size: 1.1rem;
   }
 }
+
+/* Social icons container */
+.social-icons {
+  margin-bottom: 1.5rem;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+
+.social-icons img {
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+  transition: transform 0.2s;
+}
+
+.social-icons a:hover img {
+  transform: scale(1.1);
+}
+
+/* Section headings */
+h2 {
+  margin-top: 2rem;
+  font-size: 1.3rem;
+  color: #555;
+}
+
+/* Links (buttons) inherit previous styling */
+a {
+  display: block;
+  margin: 0.8rem auto;
+  padding: 0.8rem 1.5rem;
+  max-width: 260px; /* constrain button width for nicer layout */
+  text-align: center;
+}
