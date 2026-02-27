@@ -39,11 +39,14 @@ main {
 /* ================================
    Inline social icons under logo
    ================================ */
+
+/* Make social icons container only as wide as its icons */
 .social-icons-inline {
   display: flex;
-  justify-content: center;  
-  gap: 0.5rem;                  /* spacing between icons */
-  margin-bottom: 1.5rem;        
+  justify-content: center;
+  gap: 0.5rem;         /* spacing between icons */
+  margin: 1rem auto 1.5rem auto;  /* center it horizontally */
+  width: max-content;  /* shrink-wrap to icons */
 }
 
 .social-icons-inline a {
