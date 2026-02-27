@@ -32,8 +32,10 @@ main {
 /* Logo at top */
 .logo {
   width: 120px;
-  border-radius: 50%;
+  border-radius: 50%;         /* keep it circular */
   margin-bottom: 1rem;
+  border: 3px solid #fff;     /* white border, 3px thick */
+  padding: 3px;               /* optional: space between border and image */
 }
 
 /* ================================
