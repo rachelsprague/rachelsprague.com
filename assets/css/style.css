@@ -14,3 +14,13 @@ a {
   color: #333;
   text-decoration: underline;
 }
+
+article h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+article p em {
+  color: #666;
+  font-size: 0.9rem;
+}
