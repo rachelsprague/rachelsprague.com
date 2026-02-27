@@ -127,3 +127,25 @@ h1 {
     font-size: 1.1rem;
   }
 }
+
+/* Inline social icons under logo */
+.social-icons-inline {
+  display: flex;
+  justify-content: center;  /* center horizontally */
+  gap: 1rem;                /* spacing between icons */
+  margin-bottom: 1.5rem;    /* spacing below the icons */
+}
+
+.social-icons-inline a {
+  display: inline-block;
+}
+
+.social-icons-inline img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.2s;
+}
+
+.social-icons-inline a:hover img {
+  transform: scale(1.1);
+}
