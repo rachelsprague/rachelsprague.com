@@ -3,25 +3,24 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 2rem;
-  text-align: center; /* center landing page content */
-  background: #fff; /* optional, keep clean */
+  text-align: center;
+  background: #fff;
 }
 
-/* Centered main container with max width */
 main {
   margin: 0 auto;
-  max-width: 600px; /* landing page / content max width */
-  width: 90%;       /* responsive for small screens */
+  max-width: 600px;
+  width: 90%;
 }
 
-/* Landing page / Linktree-style links */
+/* Linktree-style links */
 a {
   color: #333;
-  text-decoration: none;       /* no underline for button look */
-  display: block;              /* stack links vertically */
-  margin: 0.8rem 0;            /* space between links */
-  padding: 0.8rem 1.5rem;      /* slightly bigger clickable area */
-  background: #f0f0f0;         /* subtle button look */
+  text-decoration: none;
+  display: block;
+  margin: 0.8rem 0;
+  padding: 0.8rem 1.5rem;
+  background: #f0f0f0;
   border-radius: 10px;
   transition: background 0.2s, transform 0.2s;
   font-weight: 500;
@@ -29,7 +28,7 @@ a {
 
 a:hover {
   background: #e0e0e0;
-  transform: scale(1.02);      /* subtle hover pop */
+  transform: scale(1.02);
 }
 
 /* Headings */
@@ -49,14 +48,14 @@ article p em {
   font-size: 0.9rem;
 }
 
-/* Optional responsive tweaks for larger screens */
+/* Desktop tweaks */
 @media screen and (min-width: 1024px) {
   main {
-    max-width: 720px; /* wider container for desktop */
+    max-width: 720px;
   }
 
   a {
-    padding: 1rem 2rem; /* bigger buttons for desktop */
+    padding: 1rem 2rem;
     font-size: 1.1rem;
   }
 }
