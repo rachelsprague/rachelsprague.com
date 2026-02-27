@@ -6,10 +6,10 @@ title: Rachel Sprague
 <div class="landing-container">
 
   <!-- Logo / Icon -->
-  <img src="/assets/images/logo.png" alt="Rachel Sprague" class="logo">
+  <img src="/assets/logo.png" alt="Rachel Sprague" class="logo">
 
-  <!-- Social media icons -->
-  <div class="social-icons">
+  <!-- Social media icons inline -->
+  <div class="social-icons-inline">
     <a href="https://github.com/raychcom" target="_blank">
       <img src="/assets/images/github.svg" alt="GitHub" />
     </a>
@@ -18,8 +18,8 @@ title: Rachel Sprague
     </a>
   </div>
 
-  <!-- Links Section -->
-  <!-- <h2>Links</h2>
+  <!-- Links Section 
+  <h2>Links</h2>
   <a href="/about">About Me</a>
   <a href="/work">Work / Projects</a>
   <a href="/resume">Resume</a>
