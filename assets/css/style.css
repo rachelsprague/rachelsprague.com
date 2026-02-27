@@ -42,7 +42,7 @@ main {
 .social-icons-inline {
   display: flex;
   justify-content: center;  
-  gap: 0.5rem;                  /* closer spacing between icons */
+  gap: 0.5rem;                  /* spacing between icons */
   margin-bottom: 1.5rem;        
 }
 
@@ -75,7 +75,7 @@ h2 {
 /* ================================
    Buttons / Links in landing container
    ================================ */
-.landing-container a {
+.landing-container a:not(.social-icons-inline a) {
   display: block;
   margin: 0.8rem auto;
   padding: 0.8rem 1.5rem;
@@ -89,7 +89,7 @@ h2 {
   font-weight: 500;
 }
 
-.landing-container a:hover {
+.landing-container a:not(.social-icons-inline a):hover {
   background: #333;        /* slightly lighter on hover */
   transform: scale(1.02);
 }
@@ -127,7 +127,7 @@ h1 {
     max-width: 400px; /* slightly wider container on desktop */
   }
 
-  .landing-container a {
+  .landing-container a:not(.social-icons-inline a) {
     padding: 1rem 2rem;
     font-size: 1.1rem;
   }
