@@ -159,3 +159,35 @@ h1 {
     font-size: 1.1rem;
   }
 }
+
+/* ================================
+   Glass-style buttons / links
+   ================================ */
+.landing-container a:not(.social-icons-inline a) {
+  display: block;
+  margin: 0.8rem auto;
+  padding: 0.8rem 1.5rem;
+  max-width: 260px;
+  text-align: center;
+  text-decoration: none;
+  color: #eee;
+
+  /* glass/frosted effect */
+  background: rgba(255, 255, 255, 0.08);   /* semi-transparent base */
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
+  border: 1px solid rgba(255, 255, 255, 0.15); /* subtle border */
+  border-radius: 10px;
+
+  font-weight: 500;
+  font-size: 1.1rem;
+
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.landing-container a:not(.social-icons-inline a):hover {
+  background: rgba(255, 255, 255, 0.12); /* slightly lighter on hover */
+  transform: scale(1.03);                 /* subtle pop */
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.08); /* soft glow */
+}
