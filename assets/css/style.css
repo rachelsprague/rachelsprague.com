@@ -26,9 +26,9 @@ main {
    Landing page container
    ================================ */
 .landing-container {
-  background: rgba(17, 17, 17, 0.4); /* semi-transparent black */
-  backdrop-filter: blur(8px);         /* glass blur effect */
-  -webkit-backdrop-filter: blur(8px); /* Safari support */
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(16px);         /* glass blur effect */
+  -webkit-backdrop-filter: blur(16px); /* Safari support */
   border-radius: 20px;               /* rounded corners */
   padding: 2.5rem 2rem;              /* inner spacing */
   box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* subtle shadow */
@@ -38,6 +38,7 @@ main {
   color: #eee;                       /* light text color */
   position: relative;                /* ensures backdrop-filter applies correctly */
   z-index: 1;                        /* optional: keep above background */
+  background: linear-gradient(rgba(255,255,255,0.05), rgba(17,17,17,0.2));
 }
 
 /* Logo at top */
