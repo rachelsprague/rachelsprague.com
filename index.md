@@ -25,6 +25,18 @@ title: Rachel Sprague
   <a href="/resume">Resume</a>
   <a href="/blog">Blog</a> -->
 
+<div class="landing-bio">
+  <span class="title">Senior Data Analyst</span>
+  <span class="dot-separator">•</span>
+  <span class="skill">SQL</span>
+  <span class="dot-separator">•</span>
+  <span class="skill">dbt</span>
+  <span class="dot-separator">•</span>
+  <span class="skill">Snowflake</span>
+  <span class="dot-separator">•</span>
+  <span class="skill">Analytics Engineering</span>
+</div>
+
   <!-- Utilities Section -->
   <h2>Utilities</h2>
   <a href="https://datasetsearch.research.google.com/" target="_blank">Google Dataset Search</a>

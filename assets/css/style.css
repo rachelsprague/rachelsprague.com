@@ -191,3 +191,24 @@ h1 {
   transform: scale(1.03);                 /* subtle pop */
   box-shadow: 0 4px 12px rgba(255, 255, 255, 0.08); /* soft glow */
 }
+
+/* ================================
+   Bio / skills inline section
+   ================================ */
+.landing-bio {
+  display: flex;
+  flex-wrap: wrap;          /* wraps on smaller screens */
+  justify-content: center;   /* center horizontally */
+  align-items: center;       /* vertical alignment */
+  gap: 0.5rem;               /* space between items */
+  margin: 1.5rem 0;
+  font-size: 0.95rem;
+  color: #eee;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+}
+
+.landing-bio .dot-separator {
+  display: inline-block;
+  transform: translateY(-1px); /* vertically center dot relative to text */
+  color: #aaa;                 /* slightly lighter */
+}
