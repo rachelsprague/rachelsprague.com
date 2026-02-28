@@ -27,7 +27,7 @@ title: Rachel Sprague
 
 <div class="landing-bio">
   <span class="title">Senior Data Analyst</span>
-  <span class="dot-separator">•</span>
+  
   <span class="skill">SQL</span>
   <span class="dot-separator">•</span>
   <span class="skill">dbt</span>
