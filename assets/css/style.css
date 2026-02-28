@@ -26,13 +26,16 @@ main {
    Landing page container
    ================================ */
 .landing-container {
-  background: rgba(17, 17, 17, 0.85); /* semi-transparent black */
-  color: #eee;                       /* light text color */
+  background: rgba(17, 17, 17, 0.4); /* semi-transparent black */
+  backdrop-filter: blur(8px);         /* glass blur effect */
+  -webkit-backdrop-filter: blur(8px); /* Safari support */
   border-radius: 20px;               /* rounded corners */
   padding: 2.5rem 2rem;              /* inner spacing */
   box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* subtle shadow */
   max-width: 380px;                  /* constrain width like Linktree */
   margin: 2rem auto;                 /* center container on page */
+  border: 1px solid rgba(255,255,255,0.15); /* subtle glass border */
+  color: #eee;                       /* light text color */
 }
 
 /* Logo at top */
