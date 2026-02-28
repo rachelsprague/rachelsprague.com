@@ -26,7 +26,7 @@ main {
    Landing page container
    ================================ */
 .landing-container {
-  background: #111;                  /* black background */
+  background: rgba(17, 17, 17, 0.85); /* semi-transparent black */
   color: #eee;                       /* light text color */
   border-radius: 20px;               /* rounded corners */
   padding: 2.5rem 2rem;              /* inner spacing */
