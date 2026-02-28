@@ -8,9 +8,7 @@ body {
   margin: 0;
   padding: 2rem;
   text-align: center;
-
   background-color: #111; /* base dark color */
-
   /* CSS noise texture */
   background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMiIgaGVpZ2h0PSIyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxjaXJjbGUgY3g9IjEiIGN5PSIxIiByPSIwLjUiIGZpbGw9InJnYmEoMjU1LCAyNTUsIDI1NSwgMC4xKSIvPjwvc3ZnPg==");
   background-repeat: repeat;
@@ -26,19 +24,31 @@ main {
    Landing page container
    ================================ */
 .landing-container {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(16px);         /* glass blur effect */
+  /* semi-transparent gradient for frosted glass */
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.05), /* subtle light top highlight */
+    rgba(17, 17, 17, 0.15)     /* darker base to keep depth */
+  );
+
+  /* glass blur effect */
+  backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px); /* Safari support */
-  border-radius: 20px;               /* rounded corners */
-  padding: 2.5rem 2rem;              /* inner spacing */
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* subtle shadow */
-  max-width: 380px;                  /* constrain width like Linktree */
-  margin: 2rem auto;                 /* center container on page */
-  border: 1px solid rgba(255,255,255,0.15); /* subtle glass border */
-  color: #eee;                       /* light text color */
-  position: relative;                /* ensures backdrop-filter applies correctly */
-  z-index: 1;                        /* optional: keep above background */
-  background: linear-gradient(rgba(255,255,255,0.05), rgba(17,17,17,0.2));
+
+  /* optional border glow */
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow:
+    0 4px 12px rgba(0,0,0,0.2),        /* depth shadow */
+    0 0 8px rgba(255,255,255,0.03);     /* subtle glass halo */
+
+  border-radius: 20px;
+  padding: 2.5rem 2rem;
+  max-width: 380px;
+  margin: 2rem auto;
+  color: #eee;
+
+  /* ensures backdrop-filter applies correctly */
+  position: relative;
+  z-index: 1;
 }
 
 /* Logo at top */
