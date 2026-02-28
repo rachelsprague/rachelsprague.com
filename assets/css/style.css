@@ -210,5 +210,17 @@ h1 {
 .landing-bio .dot-separator {
   display: inline-block;
   transform: translateY(-1px); /* vertically center dot relative to text */
-  color: #aaa;                 /* slightly lighter */
+  color: rgba(255,255,255,0.5);
+  font-size: 0.9rem;      /* a tiny bit smaller than the skills */
+}
+
+.landing-bio .title {
+  font-weight: 600;
+  font-size: 1rem;        /* slightly larger than the skills */
+  color: #fff;             /* brighter than the skills */
+}
+
+.landing-bio .skill {
+  color: #ccc;            /* slightly muted gray */
+  font-weight: 400;
 }
