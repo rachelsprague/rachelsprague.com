@@ -10,7 +10,7 @@ title: Rachel Sprague
 
   <!-- Social media icons inline -->
   <div class="social-icons-inline">
-    <a href="https://github.com/raychcom" target="_blank">
+    <a href="https://github.com/rachelsprague" target="_blank">
       <img src="/assets/images/github.svg" alt="GitHub" />
     </a>
     <a href="https://www.linkedin.com/in/rachelsprague/" target="_blank">
