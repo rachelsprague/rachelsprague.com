@@ -24,5 +24,5 @@ Rachel Sprague (“we,” “our,” or “us”) respects your privacy. This po
 - You may disable cookies in your browser settings.
 - All analytics data is anonymous.
 
-## Contact
-Questions? Email: contact@rachelsprague.com
+<!-- ## Contact
+Questions? Email: contact@rachelsprague.com -->
