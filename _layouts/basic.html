@@ -1,6 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
+    <!-- Google tag (gtag.js) -->
+  {% if jekyll.environment == "production" %}
+
+  <script>
+  /* ---------------------------------
+    RS personal-traffic detection
+  ---------------------------------- */
+
+  // change this for each site
+  const GA_ID = "G-2NV7GQH8EY";
+
+  /* check if this browser is marked as RS */
+  const isRS = document.cookie.includes("RSVisitor=true");
+
+  /* OPTIONAL: disable GA entirely for you */
+  if (isRS) {
+  }
+
+  /* if not disabling, at least tag yourself */
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+
+  if (isRS) {
+    gtag('set', {
+      'user_properties': {
+        visitor_type: 'owner'
+      }
+    });
+  }
+  </script>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2NV7GQH8EY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-2NV7GQH8EY');
+  </script>
+  {% endif %}
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{{ page.title }}</title>
