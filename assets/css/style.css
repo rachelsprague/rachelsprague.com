@@ -8,14 +8,26 @@ body {
   margin: 0;
   padding: 2rem;
   text-align: center;
-  background-color: #0a1a2a;
-  background-image: repeating-linear-gradient(
+
+  /* Base dark gradient for depth */
+  background: linear-gradient(135deg, #0a1a2a 0%, #050811 100%);
+
+  /* Subtle green-teal speckles (echo logo accent) */
+  background-image:
+    repeating-linear-gradient(
       45deg,
-      rgba(0, 255, 204, 0.02), /* faint green-teal */
+      rgba(0, 255, 204, 0.02),  /* faint green-teal */
       rgba(0, 255, 204, 0.02) 1px,
       transparent 1px,
       transparent 4px
-  );
+    ),
+    url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0i2IiBoZWlnaHQ9IjIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMSIgY3k9IjEiIHI9IjAuNSIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjEpIi8+PC9zdmc+"); /* original noise */
+
+  background-repeat: repeat, repeat;
+  background-size: auto, auto;
+
+  /* fallback base color */
+  background-color: #0a1a2a;
 }
 
 /* Centered main container for content */
