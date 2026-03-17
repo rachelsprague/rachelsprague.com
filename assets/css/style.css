@@ -62,13 +62,13 @@ main {
 .landing-container {
   /* semi-transparent gradient for frosted glass */
   background: linear-gradient(
-    rgba(255, 255, 255, 0.05), /* subtle light top highlight */
-    rgba(17, 17, 17, 0.15)     /* darker base to keep depth */
+    rgba(255, 255, 255, 0.02), /* subtle light top highlight */
+    rgba(17, 17, 17, 0.08)     /* darker base to keep depth */
   );
 
   /* glass blur effect */
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px); /* Safari support */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px); /* Safari support */
 
   /* optional border glow */
   border: 1px solid rgba(255,255,255,0.1);
