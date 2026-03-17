@@ -1,17 +1,114 @@
----
-layout: page
-title: About
-permalink: /about/
----
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-# About
+    <title>{{ page.title }}{% if site.title %} · {{ site.title }}{% endif %}</title>
 
-I’m a Senior Data Analyst focused on building clear, usable data systems and working with data in a way that’s practical and grounded.
+    {% if site.description %}
+    <meta name="description" content="{{ site.description }}" />
+    {% endif %}
 
-Most of my work centers around analytics engineering — transforming data, improving structure, and making it easier for others to use and understand.
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
 
-Outside of work, I spend a lot of time building and refining personal web projects. It’s a space where I can experiment more freely—iterating on design, structuring small systems, and exploring better ways to organize things over time.
+    {% if page.extra_css %}
+      {% for css in page.extra_css %}
+      <link rel="stylesheet" href="{{ css | relative_url }}" />
+      {% endfor %}
+    {% endif %}
 
-I tend to approach those projects the same way I approach my work: incremental improvements, attention to detail, and a preference for things that are simple, maintainable, and actually useful.
+    <!-- Google tag (gtag.js) -->
+    {% if jekyll.environment == "production" %}
+    <script>
+      // Your GA Measurement ID
+      const GA_ID = "G-2NV7GQH8EY";
 
-This site is one of those projects.
+      // Detect if this is your browser (Raych)
+      // For simplicity, we check a cookie; fallback to false
+      const isRaych = document.cookie.includes("raychVisitor=true");
+
+      // Initialize dataLayer
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+
+      // Set traffic_type based on whether this is you
+      gtag('set', 'user_properties', {
+        traffic_type: isRaych ? 'owner' : 'user'
+      });
+
+      // Optional: completely disable tracking for yourself
+      if (isRaych) {
+        window['ga-disable-' + GA_ID] = true; 
+      }
+
+    </script>
+
+    <!-- Load GA -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ GA_ID }}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      // Configure GA
+      gtag('config', '{{ GA_ID }}');
+    </script>
+    {% endif %}
+  </head>
+
+  <body class="{{ page.body_class }}">
+
+    <!-- Minimal professional nav -->
+    <nav class="site-nav">
+      <div class="nav-inner">
+        <a href="/" class="nav-logo">RS</a>
+
+        <button class="nav-toggle" aria-label="Toggle menu">
+          ☰
+        </button>
+
+        <div class="nav-links">
+          <a href="/">Home</a>
+          <a href="/about/">About</a>
+          <!-- future:
+          <a href="/work/">Work</a>
+          <a href="/blog/">Blog</a>
+          -->
+        </div>
+      </div>
+    </nav>
+
+    <main class="page-container">
+      {% if page.title %}
+        <header class="page-header">
+          <h1>{{ page.title }}</h1>
+          {% if page.subtitle %}
+            <p class="page-subtitle">{{ page.subtitle }}</p>
+          {% endif %}
+        </header>
+      {% endif %}
+
+      <article class="page-content">
+        {{ content }}
+      </article>
+    </main>
+
+    <script>
+      const toggle = document.querySelector('.nav-toggle');
+      const links = document.querySelector('.nav-links');
+
+      if (toggle && links) {
+        toggle.addEventListener('click', () => {
+          links.classList.toggle('open');
+        });
+      }
+    </script>
+
+    <footer class="site-footer">
+      &copy; {{ "now" | date: "%Y" }} {{ site.title | default: "Rachel Sprague" }} · 
+      <a href="/privacy">Privacy Policy</a>
+    </footer>
+    
+  </body>
+</html>
