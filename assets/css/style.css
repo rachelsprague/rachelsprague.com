@@ -1,5 +1,5 @@
 /* ================================
-   General page styling
+   General Page Styling
    ================================ */
 
 body {
@@ -9,28 +9,25 @@ body {
   padding: 2rem;
   text-align: center;
   background: #0a1a2a url('/assets/images/background.png') center/cover no-repeat;
+  color: #eee;
 }
 
-/* Animated noise overlay */
+/* Animated noise overlay for landing page */
 body::before {
   content: "";
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none; /* doesn’t block clicks */
+  top: 0; left: 0; width: 100%; height: 100%;
+  pointer-events: none;
   background-image: 
     repeating-linear-gradient(
       45deg,
-      rgba(0, 255, 204, 0.02),  /* faint green-teal */
+      rgba(0, 255, 204, 0.02),
       rgba(0, 255, 204, 0.02) 1px,
       transparent 1px,
       transparent 4px
     ),
-    url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0i2IiBoZWlnaHQ9IjIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMSIgY3k9IjEiIHI9IjAuNSIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjEpIi8+PC9zdmc+"); /* subtle noise */
+    url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0i2IiBoZWlnaHQ9IjIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMSIgY3k9IjEiIHI9IjAuNSIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjEpIi8+PC9zdmc+");
   background-repeat: repeat, repeat;
-  background-size: auto, auto;
   opacity: 0.25;
   animation: noiseAnim 20s linear infinite;
 }
@@ -43,76 +40,62 @@ body::after {
   background: radial-gradient(circle at center, rgba(255,255,255,0.03), transparent 70%);
 }
 
-/* Slow subtle movement */
 @keyframes noiseAnim {
   0% { transform: translate(0, 0); }
   50% { transform: translate(-6%, 6%); }
   100% { transform: translate(0, 0); }
 }
 
-/* Centered main container for content */
+/* ================================
+   Main & Containers
+   ================================ */
+
 main {
   margin: 0 auto;
   width: 100%;
 }
 
-/* ================================
-   Landing page container
-   ================================ */
+/* Landing page container */
 .landing-container {
-  /* fully see-through base */
   background: rgba(255, 255, 255, 0); 
-
-  /* glass blur effect */
   backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px); /* Safari support */
-
-  /* optional subtle border for separation */
+  -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.1);
-
-  /* soft depth shadow */
   box-shadow:
-    0 4px 12px rgba(0,0,0,0.2),       /* subtle drop shadow */
-    0 0 8px rgba(255,255,255,0.03);    /* faint glass halo */
-
+    0 4px 12px rgba(0,0,0,0.2),
+    0 0 8px rgba(255,255,255,0.03);
   border-radius: 20px;
   padding: 2.5rem 2rem;
   max-width: 380px;
   margin: 2rem auto;
   color: #eee;
-
-  /* ensures backdrop-filter applies correctly */
   position: relative;
   z-index: 1;
 }
 
-/* Logo at top */
+/* Logo */
 .logo {
   width: 120px;
-  border-radius: 50%;         /* keep it circular */
+  border-radius: 50%;
   margin-bottom: 1rem;
-  border: 3px solid #fff;     /* white border, 3px thick */
-  padding: 3px;               /* optional: space between border and image */
+  border: 3px solid #fff;
+  padding: 3px;
 }
 
-/* ================================
-   Inline social icons under logo
-   ================================ */
-
-/* Make social icons container only as wide as its icons */
+/* Social icons */
 .social-icons-inline {
   display: flex;
   justify-content: center;
-  gap: 0.5rem;         /* spacing between icons */
-  margin: 1rem auto 1.5rem auto;  /* center it horizontally */
-  width: max-content;  /* shrink-wrap to icons */
+  gap: 0.5rem;
+  margin: 1rem auto 1.5rem auto;
+  width: max-content;
 }
 
 .social-icons-inline a {
   display: inline-block;
-  background: none !important;   /* remove gray box */
-  padding: 0 !important;         /* remove padding */
-  border-radius: 0 !important;   /* remove rounded corners */
+  background: none !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
 }
 
 .social-icons-inline img {
@@ -125,82 +108,17 @@ main {
   transform: scale(1.1);
 }
 
-/* ================================
-   Section headings
-   ================================ */
+/* Landing page headings */
 h2 {
   margin-top: 2rem;
   margin-bottom: 0.5rem;
   font-size: 1.1rem;
-  color: #888;  /* darker = less competing */
+  color: #888;
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
 
-/* ================================
-   Buttons / Links in landing container
-   ================================ */
-.landing-container a:not(.social-icons-inline a) {
-  display: block;
-  margin: 0.8rem auto;
-  padding: 0.8rem 1.5rem;
-  max-width: 260px;
-  text-align: center;
-  text-decoration: none;
-  color: #eee;            /* light text on dark background */
-  background: #222;       /* darker gray background for buttons */
-  border-radius: 10px;
-  transition: background 0.2s, transform 0.2s;
-  font-weight: 500;
-}
-
-.landing-container a:not(.social-icons-inline a):hover {
-  background: #333;        /* slightly lighter on hover */
-  transform: scale(1.02);
-}
-
-/* ================================
-   Blog / Article pages
-   ================================ */
-article h1 {
-  font-size: 1.8rem;
-  margin-bottom: 0.5rem;
-}
-
-article p em {
-  color: #aaa;
-  font-size: 0.9rem;
-}
-
-/* ================================
-   Headings
-   ================================ */
-h1 {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-}
-
-/* ================================
-   Responsive / desktop tweaks
-   ================================ */
-@media screen and (min-width: 1024px) {
-  main {
-    max-width: 720px;
-  }
-
-  .landing-container {
-    max-width: 400px; /* slightly wider container on desktop */
-  }
-
-  .landing-container a:not(.social-icons-inline a) {
-    padding: 1rem 2rem;
-    font-size: 1.1rem;
-  }
-}
-
-/* ================================
-   Glass-style buttons / links
-   ================================ */
+/* Landing page buttons */
 .landing-container a:not(.social-icons-inline a) {
   display: block;
   margin: 0.8rem auto;
@@ -209,66 +127,54 @@ h1 {
   text-align: center;
   text-decoration: none;
   color: #eee;
-
-  /* glass/frosted effect */
-  background: rgba(255, 255, 255, 0.08);   /* semi-transparent base */
+  background: rgba(255,255,255,0.08);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-
-  border: 1px solid rgba(255, 255, 255, 0.15); /* subtle border */
+  border: 1px solid rgba(255,255,255,0.15);
   border-radius: 10px;
-
   font-weight: 500;
   font-size: 1.1rem;
-
   transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .landing-container a:not(.social-icons-inline a):hover {
-  background: rgba(255, 255, 255, 0.12); /* slightly lighter on hover */
-  transform: scale(1.03);                 /* subtle pop */
-  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.08); /* soft glow */
+  background: rgba(255,255,255,0.12);
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(255,255,255,0.08);
 }
 
-/* ================================
-   Bio / skills inline section
-   ================================ */
+/* Landing bio */
 .landing-bio {
   text-align: center;
   margin: 1.5rem auto;
   font-size: 0.95rem;
-  color: #bbb;              /* was #eee → soften it */
-  max-width: 260px;        /* match button width */
+  color: #bbb;
+  max-width: 260px;
   line-height: 1.5;
-} 
+}
 
-/* Title on its own line */
 .landing-bio .title {
   color: #e6fffb;
   font-weight: 600;
   font-size: 1.05rem;
 }
 
-/* Inline skills */
 .landing-bio .skill {
   display: inline-block;
-  color: #ccc;              /* slightly muted gray */
+  color: #ccc;
   font-weight: 400;
-  margin: 0 0.25rem;        /* spacing between skills and dots */
+  margin: 0 0.25rem;
 }
 
-/* Dot separators */
 .landing-bio .dot-separator {
   display: inline-block;
-  color: rgba(255,255,255,0.5); /* subtle lighter dot */
+  color: rgba(255,255,255,0.5);
   font-size: 0.9rem;
   margin: 0 0.25rem;
-  transform: translateY(-1px);   /* vertical align dot with text */
+  transform: translateY(-1px);
 }
 
-/* ================================
-   Footer styling
-   ================================ */
+/* Landing footer */
 footer {
   text-align: center;
   font-size: 0.9rem;
@@ -276,7 +182,7 @@ footer {
   margin-top: 3rem;
   padding: 1.5rem 0;
   border-top: 1px solid rgba(0,0,0,0.05);
-  background: transparent; /* keeps background consistent with page */
+  background: transparent;
 }
 
 footer a {
@@ -290,59 +196,33 @@ footer a:hover {
 }
 
 /* ================================
-   Page layout (non-landing)
-   ================================ */
-
-.page-container {
-  max-width: 720px;
-  margin: 3rem auto;
-  padding: 0 1.5rem;
-  text-align: left;
-  color: #eee;
-  .page-container {
-  max-width: 720px;
-  margin: 3rem auto;
-  padding: 2rem;
-  background: rgba(10, 26, 42, 0.75);  /* ties to your bg color */
-  backdrop-filter: blur(6px);
-  border-radius: 16px;
-  border: 1px solid rgba(255,255,255,0.08);
-}
-}
-
-.page-header h1 {
-  margin-bottom: 0.5rem;
-}
-
-.page-subtitle {
-  color: #aaa;
-  margin-bottom: 2rem;
-}
-
-.page-content p {
-  margin-bottom: 1.2rem;
-  color: #ddd;
-}
-
-/* ================================
-   Page layout (white theme)
+   Page Layout (White Theme)
    ================================ */
 
 .page-layout {
   background: #ffffff;
   color: #222;
+  min-height: 100vh;
 }
 
-/* Content container */
 .page-layout .page-container {
   max-width: 720px;
   margin: 3rem auto;
-  padding: 0 1.5rem;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  text-align: left;
 }
 
-/* Typography */
 .page-layout h1 {
   color: #111;
+  margin-bottom: 0.5rem;
+}
+
+.page-layout .page-subtitle {
+  color: #555;
+  margin-bottom: 2rem;
 }
 
 .page-layout .page-content {
@@ -351,6 +231,7 @@ footer a:hover {
 
 .page-layout .page-content p {
   margin-bottom: 1.2rem;
+  line-height: 1.6;
 }
 
 /* ================================
@@ -389,7 +270,7 @@ footer a:hover {
   color: #fff;
 }
 
-/* Mobile menu */
+/* Mobile nav */
 .nav-toggle {
   display: none;
   background: none;
@@ -418,6 +299,7 @@ footer a:hover {
   }
 }
 
+/* Page-layout specific nav */
 .page-layout .site-nav {
   background: #111;
   border-bottom: 1px solid #222;
@@ -435,14 +317,21 @@ footer a:hover {
   color: #fff;
 }
 
+/* ================================
+   Footer (Page Layout)
+   ================================ */
+
 .page-layout .site-footer {
   color: #777;
   border-top: 1px solid #eee;
   margin-top: 4rem;
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 2rem 0;
 }
 
 .page-layout a {
-  color: #0aa89e; /* your teal-ish accent */
+  color: #0aa89e;
 }
 
 .page-layout a:hover {
@@ -450,13 +339,20 @@ footer a:hover {
 }
 
 /* ================================
-   Footer
+   Responsive / Desktop tweaks
    ================================ */
 
-.site-footer {
-  text-align: center;
-  font-size: 0.9rem;
-  color: #555;
-  margin-top: 4rem;
-  padding: 2rem 0;
+@media screen and (min-width: 1024px) {
+  main {
+    max-width: 720px;
+  }
+
+  .landing-container {
+    max-width: 400px;
+  }
+
+  .landing-container a:not(.social-icons-inline a) {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+  }
 }

@@ -20,7 +20,7 @@ title: Rachel Sprague
 
   <!-- Title + Skills -->
   <div class="landing-bio">
-    <span class="title">Senior Data Analyst</span>
+    <span class="title">Senior Data Analyst</span> <br/>
     
     <span class="skill">SQL</span>
     <span class="dot-separator">•</span>

@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-# About
+<!-- # About -->
 
 I’m a Senior Data Analyst focused on building clear, usable data systems and working with data in a way that’s practical and grounded.
 
