@@ -8,13 +8,7 @@ body {
   margin: 0;
   padding: 2rem;
   text-align: center;
-
-  /* Base dark gradient */
-  background: linear-gradient(135deg, #0a1a2a 0%, #050811 100%);
-  background-color: #0a1a2a;
-  overflow: hidden; /* prevents scrollbars from noise animation */
-
-  position: relative; /* needed for pseudo-element */
+  background: #0a1a2a url('/assets/images/background.jpg') center/cover no-repeat;
 }
 
 /* Animated noise overlay */
