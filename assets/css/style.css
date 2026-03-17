@@ -37,14 +37,22 @@ body::before {
     url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0i2IiBoZWlnaHQ9IjIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMSIgY3k9IjEiIHI9IjAuNSIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjEpIi8+PC9zdmc+"); /* subtle noise */
   background-repeat: repeat, repeat;
   background-size: auto, auto;
-  opacity: 0.15;
+  opacity: 0.25;
   animation: noiseAnim 20s linear infinite;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; width: 100%; height: 100%;
+  pointer-events: none;
+  background: radial-gradient(circle at center, rgba(255,255,255,0.03), transparent 70%);
 }
 
 /* Slow subtle movement */
 @keyframes noiseAnim {
   0% { transform: translate(0, 0); }
-  50% { transform: translate(-3%, 3%); }
+  50% { transform: translate(-6%, 6%); }
   100% { transform: translate(0, 0); }
 }
 
