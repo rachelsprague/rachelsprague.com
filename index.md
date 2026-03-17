@@ -18,27 +18,40 @@ title: Rachel Sprague
     </a>
   </div>
 
-  <!-- Links Section 
+  <!-- Title + Skills -->
+  <div class="landing-bio">
+    <span class="title">Senior Data Analyst</span>
+    
+    <span class="skill">SQL</span>
+    <span class="dot-separator">•</span>
+    <span class="skill">dbt</span>
+    <span class="dot-separator">•</span>
+    <span class="skill">Snowflake</span>
+    <span class="dot-separator">•</span>
+    <span class="skill">Analytics Engineering</span>
+  </div>
+
+  <!-- About snippet -->
+  <div class="landing-bio">
+    <p>
+      I focus on building clear, usable data systems. Outside of work, I build and maintain personal web projects as a way to experiment with design, data, and small technical ideas. This site is part of that ongoing process.
+    </p>
+  </div>
+
+  <!-- Main Links -->
   <h2>Links</h2>
   <a href="/about">About Me</a>
-  <a href="/work">Work / Projects</a>
-  <a href="/resume">Resume</a>
-  <a href="/blog">Blog</a> -->
 
-<div class="landing-bio">
-  <span class="title">Senior Data Analyst</span>
-  
-  <span class="skill">SQL</span>
-  <span class="dot-separator">•</span>
-  <span class="skill">dbt</span>
-  <span class="dot-separator">•</span>
-  <span class="skill">Snowflake</span>
-  <span class="dot-separator">•</span>
-  <span class="skill">Analytics Engineering</span>
-</div>
+  <!-- Optional: Currently -->
+  <div class="landing-bio">
+    <span class="title">Currently</span>
+    <p>
+      Experimenting with Jekyll layouts, refining UI details, and iterating on small web projects.
+    </p>
+  </div>
 
-  <!-- Utilities Section -->
-  <h2>Utilities</h2>
+  <!-- Resources Section -->
+  <h2>Resources</h2>
   <a href="https://datasetsearch.research.google.com/" target="_blank">Google Dataset Search</a>
   <a href="https://www.kaggle.com/datasets" target="_blank">Kaggle Datasets</a>
 

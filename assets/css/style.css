@@ -286,3 +286,102 @@ footer a {
 footer a:hover {
   color: #222;
 }
+
+/* ================================
+   Page layout (non-landing)
+   ================================ */
+
+.page-container {
+  max-width: 720px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+  text-align: left;
+  color: #eee;
+}
+
+.page-header h1 {
+  margin-bottom: 0.5rem;
+}
+
+.page-subtitle {
+  color: #aaa;
+  margin-bottom: 2rem;
+}
+
+.page-content p {
+  margin-bottom: 1.2rem;
+}
+
+/* ================================
+   Navigation
+   ================================ */
+
+.site-nav {
+  width: 100%;
+  padding: 1rem 1.5rem;
+}
+
+.nav-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-links a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: #ccc;
+}
+
+.nav-links a:hover {
+  color: #fff;
+}
+
+/* Mobile menu */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links a {
+    margin: 0.5rem 0;
+  }
+}
+
+/* ================================
+   Footer
+   ================================ */
+
+.site-footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 4rem;
+  padding: 2rem 0;
+}
