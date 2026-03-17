@@ -8,9 +8,14 @@ body {
   margin: 0;
   padding: 2rem;
   text-align: center;
-  background: linear-gradient(135deg, #0a1a2a 0%, #050811 100%);
-  background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMiIgaGVpZ2h0PSIyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxjaXJjbGUgY3g9IjEiIGN5PSIxIiByPSIwLjUiIGZpbGw9InJnYmEoMjU1LCAyNTUsIDI1NSwgMC4xKSIvPjwvc3ZnPg==");
-  background-repeat: repeat;
+  background-color: #0a1a2a;
+  background-image: repeating-linear-gradient(
+      45deg,
+      rgba(0, 255, 204, 0.02), /* faint green-teal */
+      rgba(0, 255, 204, 0.02) 1px,
+      transparent 1px,
+      transparent 4px
+  );
 }
 
 /* Centered main container for content */
