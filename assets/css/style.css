@@ -130,8 +130,11 @@ main {
    ================================ */
 h2 {
   margin-top: 2rem;
-  font-size: 1.3rem;
-  color: #ccc;        /* lighter than main text for headings */
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  color: #888;  /* darker = less competing */
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
 
 /* ================================
@@ -231,20 +234,19 @@ h1 {
    Bio / skills inline section
    ================================ */
 .landing-bio {
-  text-align: center;       /* center the whole bio */
-  margin: 1.5rem 0;
+  text-align: center;
+  margin: 1.5rem auto;
   font-size: 0.95rem;
-  color: #eee;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.5);
-}
+  color: #bbb;              /* was #eee → soften it */
+  max-width: 260px;        /* match button width */
+  line-height: 1.5;
+} 
 
 /* Title on its own line */
 .landing-bio .title {
-  display: block;           /* forces title to its own line */
+  color: #e6fffb;
   font-weight: 600;
-  font-size: 1.1rem;        /* slightly larger than skills */
-  color: #fff;              /* bright white */
-  margin-bottom: 0.5rem;    /* space between title and skills */
+  font-size: 1.05rem;
 }
 
 /* Inline skills */
@@ -297,6 +299,15 @@ footer a:hover {
   padding: 0 1.5rem;
   text-align: left;
   color: #eee;
+  .page-container {
+  max-width: 720px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: rgba(10, 26, 42, 0.75);  /* ties to your bg color */
+  backdrop-filter: blur(6px);
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.08);
+}
 }
 
 .page-header h1 {
@@ -310,6 +321,36 @@ footer a:hover {
 
 .page-content p {
   margin-bottom: 1.2rem;
+  color: #ddd;
+}
+
+/* ================================
+   Page layout (white theme)
+   ================================ */
+
+.page-layout {
+  background: #ffffff;
+  color: #222;
+}
+
+/* Content container */
+.page-layout .page-container {
+  max-width: 720px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+}
+
+/* Typography */
+.page-layout h1 {
+  color: #111;
+}
+
+.page-layout .page-content {
+  color: #333;
+}
+
+.page-layout .page-content p {
+  margin-bottom: 1.2rem;
 }
 
 /* ================================
@@ -319,6 +360,9 @@ footer a:hover {
 .site-nav {
   width: 100%;
   padding: 1rem 1.5rem;
+  background: rgba(10, 26, 42, 0.85);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 
 .nav-inner {
@@ -372,6 +416,37 @@ footer a:hover {
   .nav-links a {
     margin: 0.5rem 0;
   }
+}
+
+.page-layout .site-nav {
+  background: #111;
+  border-bottom: 1px solid #222;
+}
+
+.page-layout .nav-logo {
+  color: #fff;
+}
+
+.page-layout .nav-links a {
+  color: #ccc;
+}
+
+.page-layout .nav-links a:hover {
+  color: #fff;
+}
+
+.page-layout .site-footer {
+  color: #777;
+  border-top: 1px solid #eee;
+  margin-top: 4rem;
+}
+
+.page-layout a {
+  color: #0aa89e; /* your teal-ish accent */
+}
+
+.page-layout a:hover {
+  text-decoration: underline;
 }
 
 /* ================================
