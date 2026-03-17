@@ -60,20 +60,20 @@ main {
    Landing page container
    ================================ */
 .landing-container {
-  /* background: linear-gradient(
-    rgba(255, 255, 255, 0.01),
-    rgba(17, 17, 17, 0.04)
-  ); */
+  /* fully see-through base */
+  background: rgba(255, 255, 255, 0); 
 
   /* glass blur effect */
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px); /* Safari support */
 
-  /* optional border glow */
-  border: 1px solid rgba(255,255,255,0.1);
+  /* optional subtle border for separation */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  /* soft depth shadow */
   box-shadow:
-    0 4px 12px rgba(0,0,0,0.2),        /* depth shadow */
-    0 0 8px rgba(255,255,255,0.03);     /* subtle glass halo */
+    0 4px 12px rgba(0,0,0,0.2),       /* subtle drop shadow */
+    0 0 8px rgba(255,255,255,0.03);    /* faint glass halo */
 
   border-radius: 20px;
   padding: 2.5rem 2rem;
