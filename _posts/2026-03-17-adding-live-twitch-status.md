@@ -1,7 +1,9 @@
 ---
-layout: post
+layout: page
 title: "Adding Live Twitch Status to a Static Site (Without a Backend)"
 date: 2026-03-17
+body_class: blog-post
+subtitle: "How I show live Twitch status on a static Jekyll site without a backend"
 ---
 
 Adding a live Twitch status indicator to a static site can be tricky if you don’t want to set up a backend. Here’s how I did it using just a simple API and a bit of JavaScript.
@@ -115,3 +117,5 @@ Because what’s a static site without a little humor?
 - Add a hover tooltip with the stream title
 - Integrate other APIs (like YouTube or Bluesky) in a similar way
 - Animate the status card for subtle feedback when the stream goes live
+
+<p><a href="/">← Back to Home</a></p>

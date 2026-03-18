@@ -1,6 +1,7 @@
 ---
-layout: post
+layout: page
 title: Blog
+body_class: blog-index
 ---
 <h1>Blog</h1>
 <ul>
