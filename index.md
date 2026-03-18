@@ -81,7 +81,7 @@ title: Rachel Sprague
     "Adding one more widget.",
     "Whack-a-CSS-issue.",
     "Fixing 1 layout issue, creating two more.",
-    "Exploring Github Pages in 2026.",
+    "Exploring Github Pages.",
     "Trying to convince myself I enjoy debugging CSS."
   ];
 
