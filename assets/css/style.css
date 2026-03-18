@@ -276,6 +276,7 @@ footer a:hover {
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
   text-align: left;
+  min-height: 500px;
 }
 
 .page-layout h1 {
@@ -439,7 +440,6 @@ body.page-layout.blog-post {
   background: #fff;
   border-radius: 16px;
   box-shadow: 0 6px 16px rgba(0,0,0,0.06);
-  min-height: 500px;
 }
 
 .page-layout.blog-post .page-content p {
