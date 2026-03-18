@@ -61,6 +61,7 @@ title: Rachel Sprague
     <div class="subsection">
       <h3>Links</h3>
       <a href="/about">About Me</a>
+      <!-- <a href="/blog">Blog</a> -->
     </div>
 
     <div class="subsection">
