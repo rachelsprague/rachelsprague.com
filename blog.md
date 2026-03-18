@@ -2,6 +2,7 @@
 layout: page
 title: Blog
 body_class: blog-index
+permalink: /blog/
 ---
 <!-- <h1>Blog</h1> -->
 <ul>
