@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Privacy Policy
+title: Privacy Policy - Rachel Sprague
 ---
 
-# Privacy Policy – Rachel Sprague
+<!-- # Privacy Policy – Rachel Sprague -->
 
 Effective Date: [Insert Date]
 

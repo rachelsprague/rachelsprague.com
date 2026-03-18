@@ -6,7 +6,8 @@ body {
   font-family: system-ui, -apple-system, sans-serif;
   line-height: 1.6;
   margin: 0;
-  padding: 2rem;
+  /* padding: 2rem; */
+  padding: 0;
   text-align: center;
   background: #0a1a2a url('/assets/images/background.png') center/cover no-repeat;
   color: #eee;
