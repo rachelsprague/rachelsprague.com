@@ -40,13 +40,13 @@ title: Rachel Sprague
 
   <!-- Currently -->
   <div class="section-card">
-    <span class="title">Currently</span>
+    <span class="title">Currently:</span>
     <p id="currently-text">Experimenting with Jekyll layouts, refining UI details, and iterating on small web projects.</p>
   </div>
 
   <!-- Selected Work -->
   <div class="section-card">
-    <span class="title">Selected Work</span>
+    <span class="title">Things I'm Building:</span>
     <ul>
       <li>Custom Jekyll sites (3+ personal projects)</li>
       <li>Last.fm, Twitch, Bluesky widgets</li>
@@ -69,10 +69,6 @@ title: Rachel Sprague
       <a href="https://www.kaggle.com/datasets" target="_blank">Kaggle Datasets</a>
     </div>
   </div>
-
-  <!-- Optional Buttons -->
-  <a class="btn btn--primary btn--large btn--block" href="https://www.raych.com" target="_blank" rel="noopener">Raych</a>
-  <a class="btn btn--primary btn--large btn--block" href="http://www.raych.com/makes/" target="_blank" rel="noopener">Raych Makes</a>
 
 </div>
 
