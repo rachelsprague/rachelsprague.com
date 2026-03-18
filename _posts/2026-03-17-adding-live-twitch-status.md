@@ -3,12 +3,12 @@ layout: page
 title: "Adding a Live Twitch Status to a Static Site"
 date: 2026-03-17
 body_class: blog-post
-subtitle: "Displaying live Twitch status directly on a Jekyll site"
+subtitle: "Showing a live Twitch status on a static Jekyll site"
 ---
 
-Normally, fetching live data requires a server, but we can pull the Twitch status for a channel directly from the browser using JavaScript. I also added a subtle pulsing animation when live to make it stand out visually.
+Normally, fetching live data requires a server, but we can pull the Twitch status for a channel directly from the browser using JavaScript - no backend setup needed. I also added a subtle pulsing animation when live to make it stand out visually.
 
-<div class="demo-block">
+<div style="display:flex; justify-content:center; margin:2rem 0;">
   <p class="demo-label">Live Demo (updates every 60s)</p>
 
     <div id="twitch-status" class="twitch-card">
@@ -59,7 +59,7 @@ I use [decapi.me](https://decapi.me) to fetch Twitch uptime. Here’s the JavaSc
 
         // Fade animation for smooth update
         card.style.opacity = 0;
-        card.style.transform = "translateY(4px)";
+        <!-- card.style.transform = "translateY(4px)"; -->
 
         setTimeout(() => {
           if (text.toLowerCase().includes("offline")) {
@@ -117,8 +117,8 @@ Here’s the CSS I added to `style.css`:
     }
 
     @keyframes twitchPulse {
-      0%, 100% { transform: scale(1); opacity: 1; }
-      50% { transform: scale(1.04); opacity: 0.8; }
+    0%, 100% { transform: translateY(0) scale(1); opacity: 1; }
+    50% { transform: translateY(0) scale(1.04); opacity: 0.85; }
     }
 
 The `live` class triggers both the background color and the pulsing animation when the stream is live.
@@ -135,38 +135,37 @@ The `live` class triggers both the background color and the pulsing animation wh
 <p><a href="/">← Back to Home</a></p>
 
 <script>
-async function updateTwitchStatusPost() {
-  try {
-    const res = await fetch("https://decapi.me/twitch/uptime/xqc");
-    const text = await res.text();
+    // Twitch Status Widget
+    async function updateTwitchStatus() {
+    try {
+        const res = await fetch("https://decapi.me/twitch/uptime/xqc");
+        const text = await res.text();
 
-    const card = document.getElementById("twitch-status");
-    if (!card) return;
+        const card = document.getElementById("twitch-status");
+        const textBlock = card.querySelector(".text-block");
+        const mainText = textBlock.querySelector("#twitch-text");
+        const durationEl = textBlock.querySelector(".duration");
 
-    const textBlock = card.querySelector(".text-block");
-    const mainText = textBlock.querySelector("#twitch-text");
-    const durationEl = textBlock.querySelector(".duration");
-
-    if (text.toLowerCase().includes("offline")) {
-      mainText.textContent = "🐠 Stream Offline";
-      durationEl.textContent = "";
-      card.classList.remove("live");
-    } else {
-      mainText.textContent = "🐠 Live on Twitch";
-      durationEl.textContent = text;
-      card.classList.add("live");
+        if (text.toLowerCase().includes("offline")) {
+        mainText.textContent = "Stream Offline";
+        durationEl.textContent = "";
+        card.classList.remove("live");
+        } else {
+        mainText.textContent = "Live on Twitch";
+        durationEl.textContent = text;
+        card.classList.add("live");
+        }
+    } catch (err) {
+        console.error("Failed to fetch Twitch status:", err);
+        const card = document.getElementById("twitch-status");
+        const textBlock = card.querySelector(".text-block");
+        textBlock.querySelector("#twitch-text").textContent = "🐠 Stream status unavailable";
+        textBlock.querySelector(".duration").textContent = "";
+        card.classList.remove("live");
+    }
     }
 
-  } catch {
-    const card = document.getElementById("twitch-status");
-    if (!card) return;
-
-    const textBlock = card.querySelector(".text-block");
-    textBlock.querySelector("#twitch-text").textContent = "🐠 Status unavailable";
-    textBlock.querySelector(".duration").textContent = "";
-  }
-}
-
-updateTwitchStatusPost();
-setInterval(updateTwitchStatusPost, 60000);
+    // Initial load + refresh every 60s
+    updateTwitchStatus();
+    setInterval(updateTwitchStatus, 60000);
 </script>
