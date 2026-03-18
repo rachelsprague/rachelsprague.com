@@ -42,12 +42,25 @@ title: Rachel Sprague
   <h2>Links</h2>
   <a href="/about">About Me</a>
 
-  <!-- Optional: Currently -->
+  <!-- Currently rotating widget -->
   <div class="landing-bio">
     <span class="title">Currently</span>
-    <p>
-      Experimenting with Jekyll layouts, refining UI details, and iterating on small web projects.
+    <p id="currently-text">
+      <!-- Placeholder, populated by JS -->
     </p>
+  </div>
+
+  <!-- Selected Work -->
+  <div class="landing-bio">
+    <span class="title">Selected Work</span>
+    <p>
+      A few small web experiments and utilities I've built. Screenshots and links coming soon:
+    </p>
+    <ul>
+      <li>Personal Jekyll pages & small UI experiments</li>
+      <li>Custom Last.fm / Spotify widgets</li>
+      <li>Data exploration and visualization demos</li>
+    </ul>
   </div>
 
   <!-- Resources Section -->
@@ -56,3 +69,23 @@ title: Rachel Sprague
   <a href="https://www.kaggle.com/datasets" target="_blank">Kaggle Datasets</a>
 
 </div>
+
+<script>
+  // Rotating "Currently" lines
+  const currentlyLines = [
+    "Claude.",
+    "Prompting.",
+    "Adding one more widget.",
+    "Whack-a-CSS-issue.",
+    "Fixing 1 layout issue, creating two more.",
+    "Exploring Github Pages in 2026.",
+    "Trying to convince myself I enjoy debugging CSS."
+  ];
+
+  const currentlyText = document.getElementById("currently-text");
+  if (currentlyText) {
+    // Pick a random line on each page load
+    const line = currentlyLines[Math.floor(Math.random() * currentlyLines.length)];
+    currentlyText.textContent = line;
+  }
+</script>
