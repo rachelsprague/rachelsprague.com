@@ -189,12 +189,46 @@ h2 {
 /* section-card wrapper for better spacing & separation */
 .section-card {
   background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255,255,255,0.1);
-  border-radius: 12px;
-  padding: 1rem 1.5rem;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 16px;
+  padding: 1.8rem 1.5rem;
   margin: 1.5rem auto;
-  max-width: 340px;
+  max-width: 380px;
   text-align: left;
+}
+
+.section-card h2 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #ccc;
+}
+
+.section-card .subsection {
+  margin-bottom: 1rem;
+}
+
+.section-card .subsection h3 {
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+  color: #aaa;
+}
+
+.section-card a {
+  display: block;
+  margin: 0.3rem 0;
+  padding: 0.5rem 0.8rem;
+  text-decoration: none;
+  color: #0aa89e;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.05);
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.section-card a:hover {
+  background: rgba(255,255,255,0.1);
+  transform: scale(1.02);
 }
 
 /* faint line between stacked section-cards */

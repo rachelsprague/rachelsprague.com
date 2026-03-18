@@ -19,7 +19,7 @@ title: Rachel Sprague
   </div>
 
   <!-- Title + Skills -->
-  <div class="landing-bio section-card">
+  <div class="landing-bio">
     <span class="title">Senior Data Analyst</span> <br/>
     
     <span class="skill">SQL</span>
@@ -32,42 +32,52 @@ title: Rachel Sprague
   </div>
 
   <!-- About snippet -->
-  <div class="landing-bio section-card">
+  <div class="section-card">
     <p>
       I focus on building clear, usable data systems. Outside of work, I build and maintain personal web projects as a way to experiment with design, data, and small technical ideas. This site is part of that ongoing process.
     </p>
   </div>
 
-  <!-- Main Links -->
-  <h2>Links</h2>
-  <a href="/about">About Me</a>
-
-  <!-- Currently Section -->
-  <div class="landing-bio section-card">
+  <!-- Currently -->
+  <div class="section-card">
     <span class="title">Currently</span>
-    <ul id="currently-text"></ul>
+    <p id="currently-text">Experimenting with Jekyll layouts, refining UI details, and iterating on small web projects.</p>
   </div>
 
   <!-- Selected Work -->
-  <div class="landing-bio section-card">
+  <div class="section-card">
     <span class="title">Selected Work</span>
     <ul>
-      <li>Creating custom widgets for Last.fm, Twitch, and Bluesky</li>
-      <li>Building three small Jekyll/GitHub Pages sites in a Linktree style</li>
-      <li>Experimenting with interactive layouts and CSS tricks</li>
-      <li>Future project: personal analytics dashboard using music APIs</li>
+      <li>Custom Jekyll sites (3+ personal projects)</li>
+      <li>Last.fm, Twitch, Bluesky widgets</li>
+      <li>GitHub Pages experimentation & layout exploration</li>
     </ul>
   </div>
 
-  <!-- Resources Section -->
-  <h2>Resources</h2>
-  <a href="https://datasetsearch.research.google.com/" target="_blank">Google Dataset Search</a>
-  <a href="https://www.kaggle.com/datasets" target="_blank">Kaggle Datasets</a>
+  <!-- Links & Resources -->
+  <div class="section-card">
+    <h2>Links & Resources</h2>
+
+    <div class="subsection">
+      <h3>Links</h3>
+      <a href="/about">About Me</a>
+    </div>
+
+    <div class="subsection">
+      <h3>Resources</h3>
+      <a href="https://datasetsearch.research.google.com/" target="_blank">Google Dataset Search</a>
+      <a href="https://www.kaggle.com/datasets" target="_blank">Kaggle Datasets</a>
+    </div>
+  </div>
+
+  <!-- Optional Buttons -->
+  <a class="btn btn--primary btn--large btn--block" href="https://www.raych.com" target="_blank" rel="noopener">Raych</a>
+  <a class="btn btn--primary btn--large btn--block" href="http://www.raych.com/makes/" target="_blank" rel="noopener">Raych Makes</a>
 
 </div>
 
+<!-- Rotating Currently Lines Script -->
 <script>
-  // Rotating "Currently" lines
   const currentlyLines = [
     "Claude.",
     "Prompting.",
@@ -78,11 +88,9 @@ title: Rachel Sprague
     "Trying to convince myself I enjoy debugging CSS."
   ];
 
-  const currentlyEl = document.getElementById("currently-text");
-  if (currentlyEl) {
-    const count = 3; // number of lines to show
-    const shuffled = currentlyLines.sort(() => 0.5 - Math.random());
-    const selected = shuffled.slice(0, count);
-    currentlyEl.innerHTML = selected.map(line => `<li>${line}</li>`).join("");
+  const currentlyText = document.getElementById("currently-text");
+  if (currentlyText) {
+    const line = currentlyLines[Math.floor(Math.random() * currentlyLines.length)];
+    currentlyText.textContent = line;
   }
 </script>
