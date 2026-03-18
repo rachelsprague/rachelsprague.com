@@ -46,7 +46,7 @@ title: Rachel Sprague
 
   <!-- Selected Work -->
   <div class="section-card">
-    <span class="title">Things I'm Building:</span>
+    <span class="title">Projects:</span>
     <ul>
       <li>Custom Jekyll sites (3+ personal projects)</li>
       <li>Last.fm, Twitch, Bluesky widgets</li>
