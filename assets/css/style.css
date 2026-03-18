@@ -484,8 +484,32 @@ body.page-layout.blog-post {
 body.blog-post .twitch-card {
   background: #f4f4f4;
   color: #111;
+  max-width: 260px;   /* narrower */
+  margin: 0 auto;     /* centered */
 }
 
 body.blog-post .twitch-card.live {
   background: #e6f7f5;
+}
+
+.demo-block {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  border: 1px solid #e5e5e5;
+  border-radius: 16px;
+  background: #fafafa;
+  text-align: center;
+}
+
+.demo-block:hover {
+  border-color: #ccc;
+  background: #f5f5f5;
+}
+
+.demo-label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #666;
+  margin-bottom: 1rem;
 }

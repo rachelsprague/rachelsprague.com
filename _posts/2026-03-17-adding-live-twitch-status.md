@@ -8,15 +8,17 @@ subtitle: "Displaying live Twitch status directly on a Jekyll site"
 
 Normally, fetching live data requires a server, but we can pull the Twitch status for a channel directly from the browser using JavaScript. I also added a subtle pulsing animation when live to make it stand out visually.
 
-<p><strong>Live Demo</strong></p>
+<div class="demo-block">
+  <p class="demo-label">Live Demo (updates every 60s)</p>
 
-<div id="twitch-status" class="twitch-card">
-  <a href="https://www.twitch.tv/github" target="_blank" rel="noopener">
-    <div class="text-block">
-      <strong id="twitch-text">🐠 Checking status...</strong>
-      <span class="duration"></span>
+    <div id="twitch-status" class="twitch-card">
+    <a href="https://www.twitch.tv/github" target="_blank" rel="noopener">
+        <div class="text-block">
+        <strong id="twitch-text">Checking status...</strong>
+        <span class="duration"></span>
+        </div>
+    </a>
     </div>
-  </a>
 </div>
 
 ## The Goal
@@ -61,11 +63,11 @@ I use [decapi.me](https://decapi.me) to fetch Twitch uptime. Here’s the JavaSc
 
         setTimeout(() => {
           if (text.toLowerCase().includes("offline")) {
-            mainText.textContent = "🐠 Stream Offline";
+            mainText.textContent = "Stream Offline";
             durationEl.textContent = "";
             card.classList.remove("live");
           } else {
-            mainText.textContent = "🐠 Live on Twitch";
+            mainText.textContent = "Live on Twitch";
             durationEl.textContent = text;
             card.classList.add("live");
           }
