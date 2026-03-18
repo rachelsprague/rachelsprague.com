@@ -19,7 +19,7 @@ title: Rachel Sprague
   </div>
 
   <!-- Title + Skills -->
-  <div class="landing-bio">
+  <div class="landing-bio section-card">
     <span class="title">Senior Data Analyst</span> <br/>
     
     <span class="skill">SQL</span>
@@ -32,7 +32,7 @@ title: Rachel Sprague
   </div>
 
   <!-- About snippet -->
-  <div class="landing-bio">
+  <div class="landing-bio section-card">
     <p>
       I focus on building clear, usable data systems. Outside of work, I build and maintain personal web projects as a way to experiment with design, data, and small technical ideas. This site is part of that ongoing process.
     </p>
@@ -42,24 +42,20 @@ title: Rachel Sprague
   <h2>Links</h2>
   <a href="/about">About Me</a>
 
-  <!-- Currently rotating widget -->
-  <div class="landing-bio">
+  <!-- Currently Section -->
+  <div class="landing-bio section-card">
     <span class="title">Currently</span>
-    <p id="currently-text">
-      <!-- Placeholder, populated by JS -->
-    </p>
+    <ul id="currently-text"></ul>
   </div>
 
   <!-- Selected Work -->
-  <div class="landing-bio">
+  <div class="landing-bio section-card">
     <span class="title">Selected Work</span>
-    <p>
-      A few small web experiments and utilities I've built. Screenshots and links coming soon:
-    </p>
     <ul>
-      <li>Personal Jekyll pages & small UI experiments</li>
-      <li>Custom Last.fm / Spotify widgets</li>
-      <li>Data exploration and visualization demos</li>
+      <li>Creating custom widgets for Last.fm, Twitch, and Bluesky</li>
+      <li>Building three small Jekyll/GitHub Pages sites in a Linktree style</li>
+      <li>Experimenting with interactive layouts and CSS tricks</li>
+      <li>Future project: personal analytics dashboard using music APIs</li>
     </ul>
   </div>
 
@@ -82,10 +78,11 @@ title: Rachel Sprague
     "Trying to convince myself I enjoy debugging CSS."
   ];
 
-  const currentlyText = document.getElementById("currently-text");
-  if (currentlyText) {
-    // Pick a random line on each page load
-    const line = currentlyLines[Math.floor(Math.random() * currentlyLines.length)];
-    currentlyText.textContent = line;
+  const currentlyEl = document.getElementById("currently-text");
+  if (currentlyEl) {
+    const count = 3; // number of lines to show
+    const shuffled = currentlyLines.sort(() => 0.5 - Math.random());
+    const selected = shuffled.slice(0, count);
+    currentlyEl.innerHTML = selected.map(line => `<li>${line}</li>`).join("");
   }
 </script>
