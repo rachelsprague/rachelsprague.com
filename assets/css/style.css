@@ -369,7 +369,8 @@ footer a:hover {
 }
 
 .page-layout .nav-logo {
-  color: #fff;
+  color: #fff !important;
+  text-decoration: none !important;
 }
 
 .page-layout .nav-links a {

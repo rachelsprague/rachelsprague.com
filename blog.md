@@ -3,7 +3,7 @@ layout: page
 title: Blog
 body_class: blog-index
 ---
-<h1>Blog</h1>
+<!-- <h1>Blog</h1> -->
 <ul>
   {% for post in site.posts %}
     <li>

@@ -5,7 +5,7 @@ title: Privacy Policy - Rachel Sprague
 
 <!-- # Privacy Policy – Rachel Sprague -->
 
-Effective Date: [Insert Date]
+Effective Date: 2026-03-18
 
 Rachel Sprague (“we,” “our,” or “us”) respects your privacy. This policy explains how we collect, use, and protect information when you visit [https://rachelsprague.com](https://rachelsprague.com).
 
@@ -25,4 +25,4 @@ Rachel Sprague (“we,” “our,” or “us”) respects your privacy. This po
 - All analytics data is anonymous.
 
 <!-- ## Contact
-Questions? Email: contact@rachelsprague.com -->
+Questions?  -->
