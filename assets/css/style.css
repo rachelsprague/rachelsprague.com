@@ -374,7 +374,8 @@ footer a:hover {
 }
 
 .page-layout .nav-links a {
-  color: #ccc;
+  color: #ccc !important;
+  text-decoration: none !important;
 }
 
 .page-layout .nav-links a:hover {
@@ -465,7 +466,7 @@ body.page-layout.blog-post {
 }
 
 .page-layout.blog-post code {
-  background: #eaeaea;
+  /* background: #eaeaea; */
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
   font-family: 'Fira Code', monospace;
@@ -478,4 +479,13 @@ body.page-layout.blog-post {
 
 .page-layout.blog-post a:hover {
   text-decoration: none;
+}
+
+body.blog-post .twitch-card {
+  background: #f4f4f4;
+  color: #111;
+}
+
+body.blog-post .twitch-card.live {
+  background: #e6f7f5;
 }
