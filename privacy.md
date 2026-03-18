@@ -1,5 +1,5 @@
 ---
-layout: basic
+layout: page
 title: Privacy Policy
 ---
 

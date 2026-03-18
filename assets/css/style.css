@@ -58,8 +58,8 @@ main {
 /* Landing page container */
 .landing-container {
   background: rgba(255, 255, 255, 0); 
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow:
     0 4px 12px rgba(0,0,0,0.2),
@@ -208,7 +208,8 @@ footer a:hover {
 .page-layout .page-container {
   max-width: 720px;
   margin: 3rem auto;
-  padding: 2rem;
+  /* padding: 2rem; */
+  padding: 0;
   background: #fff;
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
