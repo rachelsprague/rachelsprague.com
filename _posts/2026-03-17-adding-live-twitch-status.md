@@ -12,7 +12,7 @@ Normally, fetching live data requires a server, but we can pull the Twitch statu
   <p class="demo-label">Live Demo (updates every 60s)</p>
 
     <div id="twitch-status" class="twitch-card">
-    <a href="https://www.twitch.tv/github" target="_blank" rel="noopener">
+    <a href="https://www.twitch.tv/xqc" target="_blank" rel="noopener">
         <div class="text-block">
         <strong id="twitch-text">Checking status...</strong>
         <span class="duration"></span>
@@ -35,7 +35,7 @@ I wanted a card on my site that:
 I added a simple card in my `index.md` (or you can embed it here in the post for a live demo):
 
     <div id="twitch-status" class="twitch-card">
-      <a href="https://www.twitch.tv/github" target="_blank" rel="noopener">
+      <a href="https://www.twitch.tv/xqc" target="_blank" rel="noopener">
         <div class="text-block">
           <strong id="twitch-text">Stream Offline</strong>
           <span class="duration"></span>
@@ -49,7 +49,7 @@ I use [decapi.me](https://decapi.me) to fetch Twitch uptime. Here’s the JavaSc
 
     async function updateTwitchStatus() {
       try {
-        const res = await fetch("https://decapi.me/twitch/uptime/github");
+        const res = await fetch("https://decapi.me/twitch/uptime/xqc");
         const text = await res.text();
 
         const card = document.getElementById("twitch-status");
@@ -137,7 +137,7 @@ The `live` class triggers both the background color and the pulsing animation wh
 <script>
 async function updateTwitchStatusPost() {
   try {
-    const res = await fetch("https://decapi.me/twitch/uptime/github");
+    const res = await fetch("https://decapi.me/twitch/uptime/xqc");
     const text = await res.text();
 
     const card = document.getElementById("twitch-status");
