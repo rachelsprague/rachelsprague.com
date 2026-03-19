@@ -525,3 +525,23 @@ body.blog-post .twitch-card.live {
   color: #666;
   margin-bottom: 1rem;
 }
+
+/* ================================
+   Blog Post Images
+   ================================ */
+
+.blog-post img {
+  display: block;
+  max-width: 700px;   /* consistent readable width */
+  width: 100%;
+  margin: 1.5rem auto;
+  border-radius: 12px;
+
+  /* subtle card feel */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Optional: smaller images (for close-ups) */
+.blog-post img.small {
+  max-width: 500px;
+}
