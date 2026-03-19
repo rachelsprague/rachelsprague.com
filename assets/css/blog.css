@@ -242,15 +242,22 @@
 }
 
 .card-placeholder {
+  position: relative;          /* allow inner content */
   width: 100%;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 1 / 1;         /* square, same as images */
   background: linear-gradient(135deg, #0a1a2a, #0f2a44);
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  overflow: hidden;            /* ensure no overflow from text */
+}
+
+.card-placeholder span {
+  position: absolute;          /* sits on top of square */
   padding: 1rem;
   font-size: 0.9rem;
   font-weight: 500;
+  line-height: 1.2;
 }
