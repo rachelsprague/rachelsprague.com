@@ -114,8 +114,6 @@ The `live` class triggers both the background color and the pulsing animation wh
 - Pulses subtly when live for attention.
 - Works entirely on a static Jekyll site.
 
-<p><a href="/">← Back to Home</a></p>
-
 <script>
     // Twitch Status Widget
     async function updateTwitchStatus() {

@@ -82,4 +82,4 @@ I’ll keep tinkering with the site and adding content. The landing page will st
   <img src="/assets/images/blog/2026-03-18/ss3.png" alt="Layout 3">
 </div>
 
-<p><a href="/">← Back to Home</a></p>
+<!-- <p><a href="/">← Back to Home</a></p> -->
