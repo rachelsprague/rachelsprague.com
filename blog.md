@@ -5,9 +5,9 @@ body_class: blog-index
 permalink: /blog/
 ---
 
-<div class="blog-header">
+<!-- <div class="blog-header">
   <h1>Blog</h1>
-</div>
+</div> -->
 
 <div class="blog-cards">
   {% for post in site.posts %}

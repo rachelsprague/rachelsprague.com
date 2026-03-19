@@ -4,7 +4,7 @@ title: "Adding a Live Twitch Status to a Static Site"
 date: 2026-03-17
 body_class: blog-post
 subtitle: "Showing a live Twitch status on a static Jekyll site"
-image: /assets/images/blog/2026-03-18/ss1.png
+# image: /assets/images/blog/2026-03-18/ss1.png
 ---
 
 Normally, fetching live data requires a server, but we can pull the Twitch status for a channel directly from the browser using JavaScript - no backend setup needed. I also added a subtle pulsing animation when live to make it stand out visually. I'm using Github's Twitch channel as an example
