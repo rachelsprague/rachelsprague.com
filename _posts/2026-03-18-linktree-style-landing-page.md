@@ -4,6 +4,7 @@ title: "Building a Linktree-Style Layout for My Site"
 date: 2026-03-18
 body_class: blog-post
 subtitle: "How I made a simple, reusable landing page on Github Pages"
+image: /assets/images/blog/2026-03-18/ss1.png
 ---
 
 I had a Linktree forwarding my domain. I loved it. It was easy, straightforward, and exactly what I needed for a simple online presence. But it was limited.
