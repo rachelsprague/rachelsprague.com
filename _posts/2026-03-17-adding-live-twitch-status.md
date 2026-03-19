@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: "Adding a Live Twitch Status to a Static Site"
 date: 2026-03-17
 body_class: blog-post
