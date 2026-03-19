@@ -2,15 +2,76 @@
    Page Layout
    ================================ */
 
-.page-layout { background:#fff; color:#222; min-height:100vh; }
-.page-layout .page-container { max-width:720px; margin:3rem auto; padding:0; border-radius:16px; box-shadow:0 4px 12px rgba(0,0,0,0.05); text-align:left; min-height:500px; }
-.page-layout h1 { color:#111; margin-bottom:0.5rem; }
-.page-layout .page-subtitle { color:#555; margin-bottom:2rem; }
-.page-layout .page-content { color:#333; }
-.page-layout .page-content p { margin-bottom:1.2rem; line-height:1.6; }
+.page-layout {
+  background: #fff;
+  color: #222;
+  min-height: 100vh;
+}
 
-/* Optional blog post overrides */
-.page-layout.blog-post { background:#fefefe; color:#111; }
-.page-layout.blog-post .page-container { padding:2rem 2rem 3rem; box-shadow:0 6px 16px rgba(0,0,0,0.06); }
-.page-layout.blog-post h2, .page-layout.blog-post h3 { color:#0aa89e; margin:2rem 0 1rem; }
-.page-layout.blog-post pre { background:#0a1a2a; color:#eee; padding:1rem; border-radius:12px; overflow-x:auto; font-family:'Fira Code', monospace; font-size:0.95rem; }
+.page-layout .page-container {
+  max-width: 720px;
+  margin: 3rem auto;
+  padding: 2rem 2rem 3rem; /* add padding for consistent spacing */
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  text-align: left;
+  min-height: 500px;
+}
+
+.page-layout h1 {
+  color: #111;
+  margin-bottom: 0.5rem;
+}
+
+.page-layout .page-subtitle {
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.page-layout .page-content {
+  color: #333;
+}
+
+.page-layout .page-content p {
+  margin-bottom: 1.2rem;
+  line-height: 1.6;
+}
+
+/* ================================
+   Blog Post Overrides
+   ================================ */
+
+.page-layout.blog-post {
+  background: #fefefe;
+  color: #111;
+}
+
+.page-layout.blog-post .page-container {
+  padding: 2rem 2rem 3rem;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+}
+
+.page-layout.blog-post h2,
+.page-layout.blog-post h3 {
+  color: #0aa89e;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.page-layout.blog-post pre {
+  background: #0a1a2a;
+  color: #eee;
+  padding: 1rem;
+  border-radius: 12px;
+  overflow-x: auto;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.95rem;
+}
+
+/* Optional: code styling for inline code */
+.page-layout.blog-post code {
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-family: 'Fira Code', monospace;
+  background: rgba(0,0,0,0.05);
+}

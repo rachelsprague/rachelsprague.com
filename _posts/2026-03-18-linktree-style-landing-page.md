@@ -67,19 +67,10 @@ I’ll keep tinkering with the site and adding content. The landing page will st
 
 ---
 
-<!-- ![Linktree layout](/assets/images/blog/2026-03-18/ss1.png)
-*Full landing page layout*
-
-![Linktree layout](/assets/images/blog/2026-03-18/ss2.png)
-*Section grouping and s pacing*
-
-![Linktree layout](/assets/images/blog/2026-03-18/ss3.png)
-*Link styling and hierarchy* -->
-
 <div class="image-row">
   <img src="/assets/images/blog/2026-03-18/ss1.png" alt="Layout 1">
   <img src="/assets/images/blog/2026-03-18/ss2.png" alt="Layout 2">
   <img src="/assets/images/blog/2026-03-18/ss3.png" alt="Layout 3">
 </div>
 
-<!-- <p><a href="/">← Back to Home</a></p> -->
+<p class="blog-back"><a href="/">← Back to Home</a></p>
