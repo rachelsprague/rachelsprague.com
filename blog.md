@@ -7,29 +7,16 @@ permalink: /blog/
 
 <h1>Blog</h1>
 
-<div class="blog-card-grid">
+<div class="blog-cards">
   {% for post in site.posts %}
-  <article class="blog-card">
-    {% if post.image %}
-      <img src="{{ post.image }}" alt="{{ post.title }}">
-    {% else %}
-      <!-- Optional placeholder image if no post.image -->
-      <div class="blog-card-placeholder"></div>
-    {% endif %}
-
-    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-
-    {% if post.subtitle %}
-      <p class="blog-subtitle">{{ post.subtitle }}</p>
-    {% endif %}
-
-    <p class="blog-date">{{ post.date | date: "%b %-d, %Y" }}</p>
-
-    {% if post.excerpt %}
-      <p class="blog-excerpt">{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
-    {% endif %}
-
-    <a class="read-more" href="{{ post.url }}">Read →</a>
-  </article>
+    <a href="{{ post.url }}" class="blog-card">
+      {% if post.image %}
+        <img src="{{ post.image }}" alt="{{ post.title }}">
+      {% endif %}
+      <div class="card-content">
+        <h3>{{ post.title }}</h3>
+        <p class="card-date">{{ post.date | date: "%b %-d, %Y" }}</p>
+      </div>
+    </a>
   {% endfor %}
 </div>
