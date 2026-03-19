@@ -206,11 +206,13 @@
   color: #222;
   box-shadow: 0 4px 16px rgba(0,0,0,0.08);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
 }
 
 .blog-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  color: #0aa89e;
 }
 
 /* Square image OR placeholder */
@@ -237,4 +239,18 @@
   font-size: 0.85rem;
   color: #666;
   margin-top: 0.3rem;
+}
+
+.card-placeholder {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background: linear-gradient(135deg, #0a1a2a, #0f2a44);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
 }

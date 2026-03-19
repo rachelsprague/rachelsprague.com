@@ -16,7 +16,9 @@ permalink: /blog/
       {% if post.image %}
         <img src="{{ post.image }}" alt="{{ post.title }}">
       {% else %}
-        <div class="card-placeholder"></div>
+        <div class="card-placeholder">
+          <span>{{ post.title | truncate: 40 }}</span>
+        </div>
       {% endif %}
 
       <div class="card-content">
