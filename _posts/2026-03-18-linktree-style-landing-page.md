@@ -23,9 +23,10 @@ Then I discovered Github Pages and thought: *Why not just make my own?*
 ### **Why Linktree-style**
 
 It checks all the boxes:
-✅ Familiar layout (especially on mobile)  
-✅ Simple to navigate
-✅ Easy to update
+
+- ✅ Familiar layout (especially on mobile)  
+- ✅ Simple to navigate  
+- ✅ Easy to update  
 
 ---
 
@@ -74,3 +75,5 @@ I’ll keep tinkering with the site and adding content. The landing page will st
 
 ![Linktree layout](/assets/images/blog/2026-03-18/ss3.png)
 *Link styling and hierarchy*
+
+<p><a href="/">← Back to Home</a></p>

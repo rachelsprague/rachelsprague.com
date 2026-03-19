@@ -533,7 +533,8 @@ body.blog-post .twitch-card.live {
 .blog-post img {
   display: block;
   max-width: 700px;   /* consistent readable width */
-  width: 100%;
+  width: auto;
+  height: auto;
   margin: 1.5rem auto;
   border-radius: 12px;
 
