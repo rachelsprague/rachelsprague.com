@@ -72,5 +72,3 @@ I’ll keep tinkering with the site and adding content. The landing page will st
   <img src="/assets/images/blog/2026-03-18/ss2.png" alt="Layout 2">
   <img src="/assets/images/blog/2026-03-18/ss3.png" alt="Layout 3">
 </div>
-
-<p class="blog-back"><a href="/">← Back to Home</a></p>
