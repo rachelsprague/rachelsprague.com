@@ -111,7 +111,7 @@ main {
 
 /* Landing page headings */
 h2 {
-  margin-top: 2.5rem;
+  /* margin-top: 2.5rem; */
   margin-bottom: 1rem;
   font-size: 1.1rem;
   color: #888;
