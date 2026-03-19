@@ -1,0 +1,18 @@
+/* ================================
+   Blog Post Styling
+   ================================ */
+
+.blog-post { background:#fff; color:#222; border-radius:16px; padding:2.5rem; box-shadow:0 4px 20px rgba(0,0,0,0.08); text-align:left; }
+.blog-post img { display:block; max-width:700px; margin:1.5rem auto; border-radius:12px; }
+.blog-post img.small { max-width:500px; }
+.blog-content p { margin-bottom:1.2rem; line-height:1.7; }
+.blog-content h2, .blog-content h3 { margin:2rem 0 0.75rem; }
+.blog-content ul { margin:1rem 0; padding-left:1.2rem; }
+.blog-content li { margin-bottom:0.5rem; }
+.blog-back { text-align:center; margin-top:2rem; }
+.blog-back a { color:#ccc; text-decoration:none; }
+.blog-back a:hover { color:#fff; }
+
+/* Twitch Card pulse */
+.twitch-card.live { animation: twitchPulse 1.8s infinite ease-in-out; border:1px solid rgba(78,228,78,0.6); }
+@keyframes twitchPulse { 0%,100%{box-shadow:0 0 8px rgba(78,228,78,0.3);} 50%{box-shadow:0 0 16px rgba(78,228,78,0.6);} }

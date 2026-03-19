@@ -1,0 +1,95 @@
+/* ================================
+   Base Styles
+   ================================ */
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background: #0a1a2a url('/assets/images/background.png') center/cover no-repeat;
+  color: #eee;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; width: 100%; height: 100%;
+  pointer-events: none;
+  background-image: 
+    repeating-linear-gradient(
+      45deg,
+      rgba(0, 255, 204, 0.02),
+      rgba(0, 255, 204, 0.02) 1px,
+      transparent 1px,
+      transparent 4px
+    ),
+    url("data:image/svg+xml;base64,...");
+  background-repeat: repeat, repeat;
+  opacity: 0.25;
+  animation: noiseAnim 20s linear infinite;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; width: 100%; height: 100%;
+  pointer-events: none;
+  background: radial-gradient(circle at center, rgba(255,255,255,0.03), transparent 70%);
+}
+
+@keyframes noiseAnim {
+  0% { transform: translate(0, 0); }
+  50% { transform: translate(-6%, 6%); }
+  100% { transform: translate(0, 0); }
+}
+
+/* Landing page container */
+.landing-container {
+  background: rgba(255, 255, 255, 0); 
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2), 0 0 8px rgba(255,255,255,0.03);
+  border-radius: 20px;
+  padding: 2.5rem 2rem;
+  max-width: 380px;
+  margin: 2rem auto;
+  color: #eee;
+  position: relative;
+  z-index: 1;
+}
+
+/* Logo */
+.logo {
+  width: 120px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 3px solid #fff;
+  padding: 3px;
+}
+
+/* Social icons */
+.social-icons-inline {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem auto 1.5rem auto;
+  width: max-content;
+}
+
+.social-icons-inline img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.2s;
+}
+
+.social-icons-inline a:hover img {
+  transform: scale(1.1);
+}
+
+/* Landing headings, bio, cards */
+h2 { margin: 2rem 0 1rem; font-size: 1.1rem; color: #888; text-transform: uppercase; letter-spacing: 0.05em; }
+.landing-bio { text-align:center; margin:2rem auto; font-size:0.95rem; max-width:340px; color:#bbb; line-height:1.5; }
+.section-card { background: rgba(255,255,255,0.05); backdrop-filter: blur(6px); border-radius:16px; padding:1.8rem 1.5rem; margin:1.5rem auto; max-width:380px; text-align:left; }

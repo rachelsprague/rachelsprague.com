@@ -1,0 +1,23 @@
+/* ================================
+   Navigation
+   ================================ */
+
+.site-nav { width:100%; padding:1rem 1.5rem; background:rgba(10,26,42,0.85); backdrop-filter:blur(8px); border-bottom:1px solid rgba(255,255,255,0.08); }
+.nav-inner { max-width:900px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; }
+.nav-logo { font-weight:600; text-decoration:none; color:#fff; }
+.nav-links a { margin-left:1.5rem; text-decoration:none; color:#ccc; }
+.nav-links a:hover { color:#fff; }
+
+/* Mobile nav */
+.nav-toggle { display:none; background:none; border:none; color:#fff; font-size:1.5rem; }
+@media screen and (max-width:768px) {
+  .nav-toggle { display:block; }
+  .nav-links { display:none; flex-direction:column; margin-top:1rem; }
+  .nav-links.open { display:flex; }
+  .nav-links a { margin:0.5rem 0; }
+}
+
+/* Footer */
+footer, .page-layout .site-footer { text-align:center; font-size:0.9rem; color:#555; margin-top:3rem; padding:1.5rem 0; border-top:1px solid rgba(0,0,0,0.05); }
+footer a, .page-layout a { color:#555; text-decoration:underline; }
+footer a:hover, .page-layout a:hover { color:#222; }
