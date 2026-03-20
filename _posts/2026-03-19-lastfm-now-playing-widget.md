@@ -7,6 +7,11 @@ subtitle: "How I pulled live scrobble data into my personal site using the Last.
 image: /assets/images/blog/2026-03-19/ss1.png
 ---
 
+<div class="image-row">
+  <img src="/assets/images/blog/2026-03-19/ss1.png" alt="Widget screenshot 1">
+</div>
+---
+
 Music is a big part of my life. I've been scrobbling to [Last.fm](https://www.last.fm) for years now (since 2008, to be exact) and I wanted to show what I was currently listening to on my personal site. 
 
 The result: a small widget that shows what I'm currently listening to (or last listened to), the album art, and how many times I've played that track.
@@ -160,9 +165,3 @@ setInterval(updateNowPlaying, REFRESH_MS);
 ### **What's Next**
 
 I also built a Twitch stream status card alongside this one — same pattern, different API. [I wrote that one up here.](/blog/2026/03/17/adding-live-twitch-status)
-
----
-
-<div class="image-row">
-  <img src="/assets/images/blog/2026-03-19/ss1.png" alt="Widget screenshot 1">
-</div>
