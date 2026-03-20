@@ -29,6 +29,8 @@ title: Rachel Sprague
     <span class="skill">Snowflake</span>
     <span class="dot-separator">•</span>
     <span class="skill">Analytics Engineering</span>
+    <span class="dot-separator">•</span>
+    <span class="skill">AI-assisted coding</span>
   </div>
 
   <!-- About snippet -->
