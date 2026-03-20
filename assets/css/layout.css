@@ -94,3 +94,15 @@ body.blog-post pre code {
   color: inherit;
   font-size: inherit;
 }
+
+@media screen and (max-width: 768px) {
+  .blog-container {
+    margin: 1rem;
+    padding: 1.2rem 1rem 2rem;
+    border-radius: 8px;
+  }
+
+  .blog-post {
+    padding: 1.2rem;
+  }
+}
