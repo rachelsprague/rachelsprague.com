@@ -84,5 +84,7 @@ The list is easy to update so I'll keep adding to it as things change. Eventuall
 ---
 
 <div class="image-row">
-  <img src="/assets/images/blog/2026-03-20/ss1.png" alt="Currently widget screenshot">
+  <img src="/assets/images/blog/2026-03-20/ss1.png" alt="Currently widget screenshot 1">
+  <img src="/assets/images/blog/2026-03-20/ss2.png" alt="Currently widget screenshot 2">
+  <img src="/assets/images/blog/2026-03-20/ss3.png" alt="Currently widget screenshot 3">
 </div>
