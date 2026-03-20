@@ -3,3 +3,4 @@ description: Senior Data Analyst
 theme: null
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title/
+future: false

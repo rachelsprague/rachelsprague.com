@@ -5,6 +5,7 @@ date: 2026-03-19
 body_class: blog-post
 subtitle: "How I pulled live scrobble data into my personal site using the Last.fm API"
 image: /assets/images/blog/2026-03-19/ss1.png
+tags: [javascript, api, css]
 ---
 
 <div class="image-row">
