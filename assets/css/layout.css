@@ -11,7 +11,7 @@
 .page-layout .page-container {
   max-width: 720px;
   margin: 3rem auto;
-  padding: 2rem 2rem 3rem; /* add padding for consistent spacing */
+  padding: 2rem 2rem 3rem;
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
   text-align: left;
@@ -58,6 +58,7 @@
   margin-bottom: 1rem;
 }
 
+/* Code blocks (fenced) */
 .page-layout.blog-post pre {
   background: #0a1a2a;
   color: #eee;
@@ -68,10 +69,20 @@
   font-size: 0.95rem;
 }
 
-/* Optional: code styling for inline code */
+/* Inline code only — not inside a code block */
 .page-layout.blog-post code {
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
   font-family: 'Fira Code', monospace;
   background: rgba(0,0,0,0.05);
+  color: #c7254e;
+}
+
+/* Reset code styles inside pre so block styling wins */
+.page-layout.blog-post pre code {
+  background: none;
+  padding: 0;
+  border-radius: 0;
+  color: inherit;
+  font-size: inherit;
 }
