@@ -19,6 +19,8 @@
 
 .blog-subtitle {
   color: #666;
+  font-style: italic;
+  font-size: 1.05rem;
   margin-bottom: 0.75rem;
 }
 
