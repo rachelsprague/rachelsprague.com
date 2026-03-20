@@ -165,6 +165,3 @@ setInterval(updateNowPlaying, REFRESH_MS);
 ### **What's Next**
 
 I also built a Twitch stream status card alongside this one — same pattern, different API. [I wrote that one up here.](/blog/2026/03/17/adding-live-twitch-status)
-
-https://www.rachelsprague.com/2026/03/17/adding-live-twitch-status.html
-https://www.rachelsprague.com/blog/2026/03/17/adding-live-twitch-status
