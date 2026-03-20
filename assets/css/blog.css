@@ -261,3 +261,14 @@
   font-weight: 500;
   line-height: 1.2;
 }
+
+/* ================================
+   Image Caption
+   ================================ */
+.image-caption {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #777;
+  margin-top: -0.5rem;  /* pulls it closer to the image */
+  margin-bottom: 1.5rem;
+}
