@@ -271,4 +271,6 @@
   color: #777;
   margin-top: -0.5rem;  /* pulls it closer to the image */
   margin-bottom: 1.5rem;
+  opacity: 0.8;
+  font-style: italic;
 }

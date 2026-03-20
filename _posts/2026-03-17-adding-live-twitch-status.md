@@ -121,8 +121,8 @@ Here’s how it looks in the wild:
 
 <div class="image-row">
   <img src="/assets/images/blog/2026-03-17/ss1.png" alt="Twitch widget in use">
-  <p class="image-caption">Integrated Twitch Live status</p>
 </div>
+<p class="image-caption">Integrated Twitch Live status</p>
 
 <script>
     // Twitch Status Widget
