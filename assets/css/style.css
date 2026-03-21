@@ -9,7 +9,9 @@ body {
   /* padding: 2rem; */
   padding: 0;
   text-align: center;
-  background: #0a1a2a url('/assets/images/background.png') center/cover no-repeat;
+  background: linear-gradient(-45deg, #0aa89e, #1a1a4e, #0d7a6e, #2d1b69);
+  background-size: 400% 400%;
+  animation: gradientShift 12s ease infinite;
   color: #eee;
 }
 
@@ -45,6 +47,12 @@ body::after {
   0% { transform: translate(0, 0); }
   50% { transform: translate(-6%, 6%); }
   100% { transform: translate(0, 0); }
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 /* ================================
