@@ -425,7 +425,7 @@ footer a:hover {
 
 @media screen and (max-width: 480px) {
   .landing-container {
-    margin: 0.5rem;
+    margin: 1.5rem;
     padding: 1.5rem 1.2rem;
     border-radius: 14px;
   }
