@@ -9,7 +9,7 @@ body {
   /* padding: 2rem; */
   padding: 0;
   text-align: center;
-  background: linear-gradient(-45deg, #0aa89e, #1a1a4e, #0d7a6e, #2d1b69);
+  background: linear-gradient(-45deg, #0aa89e, #6b2d5e, #c84b8f, #1a6b5e, #e8703a, #8b1a4a);
   background-size: 400% 400%;
   animation: gradientShift 12s ease infinite;
   color: #eee;
