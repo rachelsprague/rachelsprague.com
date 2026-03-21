@@ -423,6 +423,14 @@ footer a:hover {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .landing-container {
+    margin: 1rem;
+    padding: 1.5rem 1.2rem;
+    border-radius: 14px;
+  }
+}
+
 /* ================================
    Blog Post / Page Layout Updates
    ================================ */
