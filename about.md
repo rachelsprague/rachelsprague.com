@@ -12,7 +12,7 @@ I'm a Senior Data Analyst at a small tech company. Small teams and broad ownersh
 
 I work across the stack — dbt, SQL, Git, CI pipelines, and lately, lambdas.
 
-The web stuff has always run parallel. Personal sites since Geocities, blogs since Blogger, and now three GitHub Pages sites that I tinker with constantly. This site is the pro-facing one. The others are hobby-focused — music, pets, that kind of thing.
+The web stuff has always run parallel. Personal sites since Geocities, blogs since Blogger, and now three GitHub Pages sites that I tinker with constantly. This site is the pro-facing one. The others focus on my personal interests, like music and my aquariums.
 
 On the personal side, I keep it scrappy. Free tools, lightweight workflows, and a 2015 MacBook I refuse to replace.
 
