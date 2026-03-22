@@ -36,7 +36,7 @@ title: Rachel Sprague
   <!-- About snippet -->
   <div class="section-card">
     <p>
-      I focus on building clear, usable data systems. Outside of work, I build and maintain personal web projects as a way to experiment with design, data, and small technical ideas. This site is part of that ongoing process.
+      Senior Data Analyst focused on building clear, usable data systems. Outside of work, I build and maintain personal web projects — this site is one of them.
     </p>
   </div>
 
