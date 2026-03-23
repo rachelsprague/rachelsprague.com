@@ -23,7 +23,7 @@ Bad code in a data pipeline might silently corrupt downstream reports for weeks 
 
 I found myself repeating myself while working with agents. Don't deploy yet. Let me validate first. Don't assume the existing logic is correct. Show me what you're changing before you change it.
 
-Providing context to an agent is crucial. The model is capable, but what is capability without context? Generic results.
+Providing context to an agent is crucial.
 
 ---
 
@@ -53,7 +53,7 @@ Now that's in there. Next session, the agent already knows.
 
 ### **Why This Matters for Data Work Specifically**
 
-A generic agent will optimize for shipping. That's fine for a lot of work. For data work, I'd rather it optimize for correctness and visibility — show your work, flag assumptions, don't touch what we're not changing.
+An agent will optimize for shipping. That's fine for a lot of work. For data work, I'd rather it optimize for correctness and visibility — show your work, flag assumptions, don't touch what we're not changing.
 
 Those aren't hard rules to follow. But the agent won't follow them consistently unless you tell it to, and it won't remember you told it unless it's somewhere persistent.
 
