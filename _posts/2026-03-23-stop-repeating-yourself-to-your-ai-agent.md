@@ -7,7 +7,7 @@ subtitle: "Stop Repeating Yourself to Your AI Agent"
 tags: [tools, ai, workflow]
 ---
 
-AI pair programming is everywhere in tech right now. Everyone's using it, everyone's figuring it out.
+AI pair programming. It's so hot right now.
 
 ---
 
