@@ -13,7 +13,7 @@ title: Rachel Sprague
     <a href="https://github.com/rachelsprague" target="_blank">
       <img src="/assets/images/github.svg" alt="GitHub" />
     </a>
-    <a href="https://www.linkedin.com/in/rachelsprague/" target="_blank">
+    <a href="https://www.linkedin.com/in/rsprague/" target="_blank">
       <img src="/assets/images/linkedin.svg" alt="LinkedIn" />
     </a>
   </div>
