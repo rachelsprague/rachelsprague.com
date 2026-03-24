@@ -8,6 +8,10 @@ image: /assets/images/blog/2026-03-24/ss1.png
 tags: [jekyll, tools, setup]
 ---
 
+<div class="image-row">
+  <img src="/assets/images/blog/2026-03-24/ss1.png" alt="RSS feed screenshot">
+</div>
+
 I didn't realize RSS feeds were still a thing, so (naturally), I wanted one. Turns out Jekyll basically does it for you.
 
 ---
@@ -61,7 +65,3 @@ It's been a long time since I've used an RSS Reader (RIP [Google Reader](https:/
 - `jekyll-feed` plugin
 
 ---
-
-<div class="image-row">
-  <img src="/assets/images/blog/2026-03-24/ss1.png" alt="RSS feed screenshot">
-</div>
