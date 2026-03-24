@@ -9,7 +9,7 @@ tags: [jekyll, tools, setup]
 ---
 
 <div class="image-row">
-  <img src="/assets/images/blog/2026-03-24/ss1.png" alt="RSS feed screenshot">
+  <img src="/assets/images/blog/2026-03-24/ss1.png" alt="RSS feed screenshot" style="max-width:50%;">
 </div>
 
 I didn't realize RSS feeds were still a thing, so (naturally), I wanted one. Turns out Jekyll basically does it for you.
